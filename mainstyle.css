@@ -1,0 +1,12 @@
+
+/* THIS IS THE MAIN CSS FILE! */
+/* index style page */
+@import "indexstyle.css";
+
+/* blogpost style page*/
+
+@import "blogpoststyle.css";
+
+/* css for the buttons on both pages */
+
+@import "blogbuttons.css";

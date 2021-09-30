@@ -1,0 +1,31 @@
+.btn {
+    border: none;
+    background-color: #666;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block; 
+    flex-grow: 1;}
+  
+  .btn:hover {background: #444;}
+  
+  .new {color: #000;flex-grow: 1;}
+  .aboutme{color: #000;flex-grow: 1;}
+  
+  
+  /*a normal, unvisited link*/
+  a:link{
+      color: inherit;
+  }
+  /*a link the user has visited*/
+  a:visited{
+      color: purple;
+  }
+  /*a link when the user mouses over it*/
+  a:hover{
+      color: blue;
+  }
+  /*a link the moment it is clicked*/
+  a:active{
+      color: purple;
+  }

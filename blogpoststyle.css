@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, serif;
+background: #000;
+}
+
+    .containerB{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20% 5% 60% 5%;
+        column-gap: 1%;
+        row-gap: 30px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "nav nav nav nav"
+        "conA conB conB conB"
+        "ft ft ft ft";
+        margin: 10px;
+    }
+    .header{
+        background: #666;
+        background-image: url("GhostHeaderImage.png");
+        color: #ededed;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        grid-area: hd;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        -ms-flex-align: center;
+        gap: 10px; 
+        background: transparent;
+        grid-area: nav; 
+    }
+    .cardC{
+        background: transparent; 
+        display: flex; 
+        flex-direction:row; 
+        gap: 3px;
+        color: #ededed;
+        font-size: 75%;
+        grid-area: conA;
+    }
+    .cardD{
+        background: #ededed;
+        color: black;
+        grid-area: conB;
+    }
+    .footer{
+        background: #ededed;
+        grid-area: ft;
+    }

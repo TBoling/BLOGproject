@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title> Ghost Stories Blog Post </title>
+    <meta 
+    content = "width = device-width, initial-scale = 1, maximum-scale = 1"
+    name = "viewport" 
+    />
+    <style>
+
+        body {
+    font-family: Arial, serif;
+background: #000;
+}
+
+    .container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20% 5% 60% 5%;
+        column-gap: 1%;
+        row-gap: 30px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "nav nav nav nav"
+        "conA conB conB conB"
+        "ft ft ft ft";
+        margin: 100px;
+    }
+    .header{
+        background: #666;
+        background-image: url(https://64.media.tumblr.com/2640ecff3fca6275e33c2ba7be342820/968c7fff268aa3a9-3d/s640x960/49fec9e67a372a0989625afe56cda2ba4ea1f87d.png);
+        color: #ededed;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        grid-area: hd;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        -ms-flex-align: center;
+        gap: 10px; 
+        background: transparent;
+        grid-area: nav; 
+    }
+    .cardA{
+        background: transparent; 
+        display: flex; 
+        flex-direction:row; 
+        gap: 3px;
+        color: #ededed;
+        font-size: 75%;
+        grid-area: conA;
+    }
+    .cardB{
+        background: #ededed;
+        color: black;
+        grid-area: conB;
+    }
+    .footer{
+        background: #ededed;
+        grid-area: ft;
+    }
+    .btn {
+  border: none;
+  background-color: #666;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block; 
+  flex-grow: 1;}
+
+.btn:hover {background: #444;}
+
+.new {color: #000;flex-grow: 1;}
+.aboutme{color: #000;flex-grow: 1;}
+.twitter {color: #000;flex-grow:1;}
+
+
+/*a normal, unvisited link*/
+a:link{
+	color: inherit;
+}
+/*a link the user has visited*/
+a:visited{
+	color: purple;
+}
+/*a link when the user mouses over it*/
+a:hover{
+	color: blue;
+}
+/*a link the moment it is clicked*/
+a:active{
+	color: purple;
+}    </style>
+
+
+</head>
+<body>
+
+    <div class= "container"> 
+        <div class="header"><h1>Ghost Stories</h1></div>
+
+    <div class="navbar"> 
+        <button class="new"><a href ="BLOGpost.html">New Posts</a></button>
+        <button class="aboutme"><a href ="BLOGpost.html">About the Site</a></button>
+
+
+    </div>
+
+    <div class="cardA">
+        <center><h3>About the Author</h3>
+<p>Tristan Boling<br>
+Amatuer Programmer <em>for</em><br>
+Udacity Learning<br>
+<img alt="Avatar" src="https://static.wikia.nocookie.net/avatar/images/4/4d/Ghost.jpg/revision/latest?cb=20130705212855" width="60" height="60">
+<p> Coding for about a month now, running this website whens he's not playing guitar. Hey!</p>      
+<a href="https://www.twitter.com/">
+         <img alt="Twitter" src="https://1000logos.net/wp-content/uploads/2017/06/Logo-Twitter.jpg"
+         width="30" height="30">
+<a href="https://www.facebook.com/">
+         <img alt="Facebook" src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_640.png"
+         width="30" height="30"> 
+<a href="https://www.linkedin.com/">
+         <img alt="LinkedIn" src="http://pngimg.com/uploads/linkedIn/linkedIn_PNG15.png"
+         width="30" height="30"> </div>
+    
+    <div class="cardB"> <h2> Strange things happen in the middle of nowhere. </h2> 
+<p> In spaces inbetween; the real and unreal, where we find the hosts of the unliving. <a href= "BLOGpost.html">Check out our latest post to learn more!</a> </div>
+    
+    <div class="footer"> <center> <a href= "BLOGindex.html">Home </a> </center> </div>
+
+    </div>
+</body>
+
+</html>
